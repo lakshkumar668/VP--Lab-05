@@ -13,7 +13,8 @@ namespace Activity_4_Student_mangement
     
     public partial class Form1 : Form
     {
-        string[] stdData = new string[100];
+        public static StudentData[] stdData = new StudentData[10];
+        public static int counter = 0;
         public Form1()
         {
             InitializeComponent();
@@ -21,25 +22,47 @@ namespace Activity_4_Student_mangement
 
         private void button2_Click(object sender, EventArgs e)
         {
+            clearData();
+
+        }
+        public void clearData()
+        {
             studentName.Text = "";
             studentLastname.Text = "";
-            address.Text = "";
-            city.Text = "";
-            mobileNo.Text = "";
-
+            studentAddress.Text = "";
+            studentCity.Text = "";
+            studentmobileNo.Text = "";
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            StudentData obj = new StudentData();
-           
-        }
+            string firstname = studentName.Text;
+            string lastname = studentLastname.Text;
+            string address = studentAddress.Text;
+            string city = studentCity.Text;
+            string mobileNo = studentmobileNo.Text;
 
+            StudentData obj = new StudentData(firstname, lastname, address,city, mobileNo);
+            stdData[counter] = obj;
+            counter++;
+            clearData();
+        }
+       
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmShowStudent obj = new frmShowStudent();
+            obj.ShowDialog();
+        }
     }
     public class StudentData
     {
-        StudentData()
+        public string firstname, lastname, address, city, mobileNo;
+       public StudentData(string firstname, string lastname, string address, string city, string mobileNo)
         {
-
+            this.firstname = firstname;
+            this.lastname= lastname;
+            this.address= address;
+            this.city= city;
+            this.mobileNo = mobileNo;
         }
     }
 

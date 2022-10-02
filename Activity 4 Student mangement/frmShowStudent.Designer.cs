@@ -147,6 +147,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmShowStudent";
             this.Text = "frmShowStudent";
+            this.Load += new System.EventHandler(this.frmShowStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

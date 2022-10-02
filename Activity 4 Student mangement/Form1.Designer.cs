@@ -35,9 +35,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.studentName = new System.Windows.Forms.TextBox();
             this.studentLastname = new System.Windows.Forms.TextBox();
-            this.address = new System.Windows.Forms.TextBox();
-            this.city = new System.Windows.Forms.TextBox();
-            this.mobileNo = new System.Windows.Forms.TextBox();
+            this.studentAddress = new System.Windows.Forms.TextBox();
+            this.studentCity = new System.Windows.Forms.TextBox();
+            this.studentmobileNo = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -102,26 +102,26 @@
             this.studentLastname.Size = new System.Drawing.Size(168, 20);
             this.studentLastname.TabIndex = 6;
             // 
-            // address
+            // studentAddress
             // 
-            this.address.Location = new System.Drawing.Point(297, 109);
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(168, 20);
-            this.address.TabIndex = 7;
+            this.studentAddress.Location = new System.Drawing.Point(297, 109);
+            this.studentAddress.Name = "studentAddress";
+            this.studentAddress.Size = new System.Drawing.Size(168, 20);
+            this.studentAddress.TabIndex = 7;
             // 
-            // city
+            // studentCity
             // 
-            this.city.Location = new System.Drawing.Point(297, 150);
-            this.city.Name = "city";
-            this.city.Size = new System.Drawing.Size(168, 20);
-            this.city.TabIndex = 8;
+            this.studentCity.Location = new System.Drawing.Point(297, 150);
+            this.studentCity.Name = "studentCity";
+            this.studentCity.Size = new System.Drawing.Size(168, 20);
+            this.studentCity.TabIndex = 8;
             // 
-            // mobileNo
+            // studentmobileNo
             // 
-            this.mobileNo.Location = new System.Drawing.Point(297, 191);
-            this.mobileNo.Name = "mobileNo";
-            this.mobileNo.Size = new System.Drawing.Size(168, 20);
-            this.mobileNo.TabIndex = 9;
+            this.studentmobileNo.Location = new System.Drawing.Point(297, 191);
+            this.studentmobileNo.Name = "studentmobileNo";
+            this.studentmobileNo.Size = new System.Drawing.Size(168, 20);
+            this.studentmobileNo.TabIndex = 9;
             // 
             // button1
             // 
@@ -151,6 +151,7 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "Shoe Student Info";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -160,9 +161,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.mobileNo);
-            this.Controls.Add(this.city);
-            this.Controls.Add(this.address);
+            this.Controls.Add(this.studentmobileNo);
+            this.Controls.Add(this.studentCity);
+            this.Controls.Add(this.studentAddress);
             this.Controls.Add(this.studentLastname);
             this.Controls.Add(this.studentName);
             this.Controls.Add(this.label5);
@@ -186,9 +187,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox studentName;
         private System.Windows.Forms.TextBox studentLastname;
-        private System.Windows.Forms.TextBox address;
-        private System.Windows.Forms.TextBox city;
-        private System.Windows.Forms.TextBox mobileNo;
+        private System.Windows.Forms.TextBox studentAddress;
+        private System.Windows.Forms.TextBox studentCity;
+        private System.Windows.Forms.TextBox studentmobileNo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

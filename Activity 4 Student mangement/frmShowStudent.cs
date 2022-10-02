@@ -16,5 +16,14 @@ namespace Activity_4_Student_mangement
         {
             InitializeComponent();
         }
+
+        private void frmShowStudent_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Form1.counter; i++) {
+
+                listBox.Items.Add(Form1.stdData[i].firstname);
+            }
+
+        }
     }
 }
