@@ -1,0 +1,10 @@
+E:\semester Final\VP\Labs\LAB 5\VP--Lab-05\Activity 4 Student mangement\bin\Debug\Activity 4 Student mangement.exe.config
+E:\semester Final\VP\Labs\LAB 5\VP--Lab-05\Activity 4 Student mangement\bin\Debug\Activity 4 Student mangement.exe
+E:\semester Final\VP\Labs\LAB 5\VP--Lab-05\Activity 4 Student mangement\bin\Debug\Activity 4 Student mangement.pdb
+E:\semester Final\VP\Labs\LAB 5\VP--Lab-05\Activity 4 Student mangement\obj\Debug\Activity 4 Student mangement.csprojAssemblyReference.cache
+E:\semester Final\VP\Labs\LAB 5\VP--Lab-05\Activity 4 Student mangement\obj\Debug\Activity_4_Student_mangement.Form1.resources
+E:\semester Final\VP\Labs\LAB 5\VP--Lab-05\Activity 4 Student mangement\obj\Debug\Activity_4_Student_mangement.Properties.Resources.resources
+E:\semester Final\VP\Labs\LAB 5\VP--Lab-05\Activity 4 Student mangement\obj\Debug\Activity 4 Student mangement.csproj.GenerateResource.cache
+E:\semester Final\VP\Labs\LAB 5\VP--Lab-05\Activity 4 Student mangement\obj\Debug\Activity 4 Student mangement.csproj.CoreCompileInputs.cache
+E:\semester Final\VP\Labs\LAB 5\VP--Lab-05\Activity 4 Student mangement\obj\Debug\Activity 4 Student mangement.exe
+E:\semester Final\VP\Labs\LAB 5\VP--Lab-05\Activity 4 Student mangement\obj\Debug\Activity 4 Student mangement.pdb

@@ -15,6 +15,7 @@ namespace Activity_3_SignUp_form
     {
         Form2 obj = new Form2();
         public static string username;
+        public static string contactClear;
         public static string password, conatctNo1, contactNo2;
         public txtContact1()
         {
@@ -30,9 +31,7 @@ namespace Activity_3_SignUp_form
         {
             username = txtUsername.Text;
             password = txtPassword.Text;
-            conatctNo1 = txtContactN0.Text;
-            if()
- 
+            conatctNo1 = txtContactN0.Text; 
             obj.ShowDialog();
         }
 
@@ -57,6 +56,7 @@ namespace Activity_3_SignUp_form
             Button btn = btnAddMore;
             btn.SetBounds(515, 232, 75, 23);
             btnAddMore.Enabled = false;
+
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -64,6 +64,11 @@ namespace Activity_3_SignUp_form
             txtUsername.Text = "";
             txtPassword.Text = "";
             txtContactN0.Text = "";
+   
+            if(btnAddMore.Enabled == false)
+            {
+                contactClear = "";
+            }
         }
     }
 }
