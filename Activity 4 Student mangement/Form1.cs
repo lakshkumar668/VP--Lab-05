@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Activity_4_Student_mangement
 {
-    
+
     public partial class Form1 : Form
     {
         public static StudentData[] stdData = new StudentData[10];
@@ -25,6 +25,23 @@ namespace Activity_4_Student_mangement
             clearData();
 
         }
+        /*public void checkFields()
+        {
+
+            if (this.studentName.Text == "" && this.studentLastname.Text == "" && this.studentAddress.Text == "" && this.studentCity.Text == "" && this.studentmobileNo.Text == "")
+            {
+
+                button1.Click -= new System.EventHandler(this.button1_Click);
+            }
+            else
+            {
+                button1.Click += new System.EventHandler(this.button1_Click);
+            }
+
+
+
+
+        }*/
         public void clearData()
         {
             studentName.Text = "";
@@ -35,6 +52,7 @@ namespace Activity_4_Student_mangement
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            checkFields();
             string firstname = studentName.Text;
             string lastname = studentLastname.Text;
             string address = studentAddress.Text;
@@ -52,7 +70,9 @@ namespace Activity_4_Student_mangement
             frmShowStudent obj = new frmShowStudent();
             obj.ShowDialog();
         }
+       
     }
+   
     public class StudentData
     {
         public string firstname, lastname, address, city, mobileNo;

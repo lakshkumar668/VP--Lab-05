@@ -128,6 +128,7 @@
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(120, 199);
             this.listBox.TabIndex = 23;
+            this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             // 
             // frmShowStudent
             // 

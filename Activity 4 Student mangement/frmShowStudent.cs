@@ -24,6 +24,19 @@ namespace Activity_4_Student_mangement
                 listBox.Items.Add(Form1.stdData[i].firstname);
             }
 
+
+        }
+
+        private void listBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+                studentName.Text = Form1.stdData[this.listBox.SelectedIndex].firstname;
+                studentName.Text = Form1.stdData[this.listBox.SelectedIndex].firstname;
+                studentLastname.Text = Form1.stdData[this.listBox.SelectedIndex].lastname;
+                address.Text = Form1.stdData[this.listBox.SelectedIndex].address;
+                city.Text = Form1.stdData[this.listBox.SelectedIndex].city;
+                mobileNo.Text = Form1.stdData[this.listBox.SelectedIndex].mobileNo;
+            
         }
     }
 }
